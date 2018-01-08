@@ -60,6 +60,7 @@
         <fundocs.pkg.abbrev>fundocs</fundocs.pkg.abbrev>
         <exide.pkg.abbrev>eXide</exide.pkg.abbrev>
         <monex.pkg.abbrev>monex</monex.pkg.abbrev>
+        <atomicwiki.pkg.abbrev>atomic-wiki</atomicwiki.pkg.abbrev>
     </properties>
 
     <dependencyManagement>

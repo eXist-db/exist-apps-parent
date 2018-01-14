@@ -4,6 +4,20 @@ This repository just contains the Maven parent artifact for eXist Apps.
 
 It just contains a number of constant properties alongside fixed dependency and plugin versions.
 
+## Use
+If you wish to use this as a base for your eXist EXPath App, then you can add the following to your `pom.xml`:
+
+```xml
+    <parent>
+        <groupId>org.exist-db</groupId>
+        <artifactId>exist-apps-parent</artifactId>
+        <version>1.4</version>
+        <relativePath/>
+    </parent>
+```
+
+If you are just starting out with creating an eXist EXPath App, then you may be interested to use [exist-apps-archetype](https://github.com/exist-db/exist-apps/archetype) which will create a skeleton app for your.
+
 ## Install
 If you wish to install this locally:
 ```bash

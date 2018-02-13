@@ -11,7 +11,7 @@ If you wish to use this as a base for your eXist EXPath App, then you can add th
     <parent>
         <groupId>org.exist-db</groupId>
         <artifactId>exist-apps-parent</artifactId>
-        <version>1.4</version>
+        <version>1.5</version>
         <relativePath/>
     </parent>
 ```

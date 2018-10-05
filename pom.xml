@@ -54,7 +54,7 @@
         <package-final-name>${project.artifactId}-${project.version}</package-final-name>
 
         <!-- other packages that the documentation (of apps) links to; their `abbrev` must match their expath-pkg.xml -->
-        <documentation.pkg.abbrev>exist-documentation</documentation.pkg.abbrev>
+        <documentation.pkg.abbrev>doc</documentation.pkg.abbrev>
         <dashboard.pkg.abbrev>dashboard</dashboard.pkg.abbrev>
         <demo.pkg.abbrev>demo</demo.pkg.abbrev>
         <fundocs.pkg.abbrev>fundocs</fundocs.pkg.abbrev>

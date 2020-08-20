@@ -85,7 +85,7 @@
                 <plugin>
                     <groupId>com.mycila</groupId>
                     <artifactId>license-maven-plugin</artifactId>
-                    <version>3.0</version>
+                    <version>4.0.rc2</version>
                 </plugin>
                 <plugin>
                     <groupId>com.code54.mojo</groupId>
@@ -242,16 +242,28 @@
                 <groupId>com.mycila</groupId>
                 <artifactId>license-maven-plugin</artifactId>
                 <configuration>
-                    <header>LGPL2.1-template.txt</header>
                     <failIfMissing>true</failIfMissing>
                     <aggregate>true</aggregate>
                     <strictCheck>true</strictCheck>
-                    <properties>
-                        <owner>${project.organization.name}</owner>
-                        <organisation>${project.organization.name}</organisation>
-                        <email>exit-open@lists.sourceforge.net</email>
-                        <url>${project.organization.url}</url>
-                    </properties>
+                    <licenseSets>
+                        <licenseSet>
+                            <header>com/mycila/maven/plugin/license/templates/LGPL-21.txt</header>
+                            <properties>
+                                <owner>${project.organization.name}</owner>
+                                <organisation>${project.organization.name}</organisation>
+                                <email>exit-open@lists.sourceforge.net</email>
+                                <url>${project.organization.url}</url>
+                            </properties>
+                            <excludes>
+                                <exclude>pom.xml</exclude>
+                                <exclude>README.md</exclude>
+                                <exclude>LICENSE</exclude>
+                                <exclude>xquery-license-style.xml</exclude>
+                                <exclude>xar-assembly.xml</exclude>
+                                <exclude>**/*.ent</exclude>
+                            </excludes>
+                        </licenseSet>
+                    </licenseSets>
                     <headerDefinitions>
                         <headerDefinition>xquery-license-style.xml</headerDefinition>
                     </headerDefinitions>
@@ -261,14 +273,6 @@
                         <xql>xquery_style</xql>
                         <xconf>xml_style</xconf>
                     </mapping>
-                    <excludes>
-                        <exclude>pom.xml</exclude>
-                        <exclude>README.md</exclude>
-                        <exclude>LICENSE</exclude>
-                        <exclude>xquery-license-style.xml</exclude>
-                        <exclude>xar-assembly.xml</exclude>
-                        <exclude>**/*.ent</exclude>
-                    </excludes>
                 </configuration>
             </plugin>
             <plugin>

@@ -327,11 +327,12 @@
                                 <url>${project.organization.url}</url>
                             </properties>
                             <excludes>
+                                <exclude>.gitignore</exclude>
+                                <exclude>.idea/</exclude>
                                 <exclude>README.md</exclude>
                                 <exclude>LICENSE</exclude>
                                 <exclude>xquery-license-style.xml</exclude>
                                 <exclude>xar-assembly.xml</exclude>
-                                <exclude>**/*.ent</exclude>
                             </excludes>
                         </licenseSet>
                     </licenseSets>

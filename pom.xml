@@ -329,6 +329,9 @@
                             <excludes>
                                 <exclude>.gitignore</exclude>
                                 <exclude>.idea/</exclude>
+                                <exclude>.mvn/</exclude>
+                                <exclude>mvnw</exclude>
+                                <exclude>mvnw.cmd</exclude>
                                 <exclude>README.md</exclude>
                                 <exclude>LICENSE</exclude>
                                 <exclude>xquery-license-style.xml</exclude>

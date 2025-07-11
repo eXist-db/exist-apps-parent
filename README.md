@@ -29,8 +29,10 @@ If you wish to install this locally:
 ```bash
 $ git clone https://github.com/exist-db/exist-apps-parent.git
 $ cd exist-apps-parent
-$ mvn clean install
+$ ./mvnw clean install
 ```
+
+NOTE: If you are on a Windows platform, you should replace `./mvnw` above with `mvn`.
 
 ## Release
 
@@ -39,9 +41,11 @@ Requirements: An install of GnuPG and a valid key for signing the release artifa
 If you modify this POM and need to release a new version, make sure you have committed your changes and then run:
 
 ```bash
-$ mvn release:prepare
-$ mvn release:perform
+$ ./mvnw release:prepare
+$ ./mvnw release:perform
 $ git push
 ```
+
+NOTE: If you are on a Windows platform, you should replace `./mvnw` above with `mvn`.
 
 You can then visit https://central.sonatype.com/ and login, to then publish the artifacts to Maven Central.

@@ -305,6 +305,18 @@
                     <failIfMissing>true</failIfMissing>
                     <aggregate>true</aggregate>
                     <strictCheck>true</strictCheck>
+                    <headerDefinitions>
+                        <headerDefinition>xquery-license-style.xml</headerDefinition>
+                    </headerDefinitions>
+                    <mapping>
+                        <java>SLASHSTAR_STYLE</java>
+                        <xconf>XML_STYLE</xconf>
+                        <xq>XQUERY_STYLE</xq>
+                        <xql>XQUERY_STYLE</xql>
+                        <xqm>XQUERY_STYLE</xqm>
+                        <xsl>XML_STYLE</xsl>
+                        <xslt>XML_STYLE</xslt>
+                    </mapping>
                     <licenseSets>
                         <licenseSet>
                             <header>com/mycila/maven/plugin/license/templates/LGPL-21-ONLY.txt</header>
@@ -323,15 +335,6 @@
                             </excludes>
                         </licenseSet>
                     </licenseSets>
-                    <headerDefinitions>
-                        <headerDefinition>xquery-license-style.xml</headerDefinition>
-                    </headerDefinitions>
-                    <mapping>
-                        <xq>xquery_style</xq>
-                        <xqm>xquery_style</xqm>
-                        <xql>xquery_style</xql>
-                        <xconf>xml_style</xconf>
-                    </mapping>
                 </configuration>
             </plugin>
             <plugin>
